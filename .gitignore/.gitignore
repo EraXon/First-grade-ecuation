@@ -1,0 +1,94 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    char e='n';
+    float r,y,x_1,c;
+    char x,s;
+    while (e=='n'){
+    cout<<endl<<"Este numarul necunoscut primul sau al doilea ?"<<endl;
+    cin>>c;
+    if (c==1){
+    cout<<"Introdu necunoscuta"<<endl;
+    cin>>x;
+    cout<<"Introdu semnul"<<endl;
+    cin>>s;
+    cout<<"Introdu al doilea numar"<<endl;
+    cin>>y;
+    cout<<"Introdu rezultatul"<<endl;
+    cin>>r;
+    switch (s){
+case '-':
+    x_1=y+r;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+case '+':
+    x_1=r-y;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+case '*':
+    x_1=r/y;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+case '/':
+    x_1=y*r;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+default:
+    cout<<"operatia nu este valida"<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    }
+}
+    else if (c==2){
+    cout<<"Introdu numarul"<<endl;
+    cin>>y;
+    cout<<"Introdu semnul"<<endl;
+    cin>>s;
+    cout<<"Introdu necunoscuta"<<endl;
+    cin>>x;
+    cout<<"Introdu rezultatul"<<endl;
+    cin>>r;
+    switch (s){
+case '-':
+    x_1=y-r;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y\n"<<endl;
+    cin>>e;
+    break;
+case '+':
+    x_1=r-y;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+case '*':
+    x_1=r/y;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+case '/':
+    x_1=y/r;
+    cout<<x<<" este egal cu: "<<x_1<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    break;
+default:
+    cout<<"not  valid operation"<<endl;
+    cout<<"would you like to exit?y/n"<<endl;
+    cin>>e;
+    }
+    return 0;
+}
+    cout<<"Good bye"<<endl;
+}
+}
